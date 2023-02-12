@@ -1,0 +1,249 @@
+:root {
+  --button: #ff0000;
+  --button-hover: #b30000;
+  --main-background: #c4c4c4;
+  --background: #e5e5e5;
+  --text: #000;
+  --footer: #000;
+  --footer-hover: #303030;
+  --text-description: #9c9696;
+
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+
+  background: var(--background);
+}
+
+#container {
+  display: flex;
+  /* border: 2px solid blue; */
+  width: 100%;
+  height: 90vh;
+  margin: auto;
+}
+/* Barra de navegação: topicos, pesquisa e sacola */
+#navbar img {
+  width: 52px;
+  height: 36.4px;
+}
+/* .search {
+  border-radius: 10px;
+  width: 22rem;
+  height: 4.5rem;
+
+  display: flex;
+  gap: .5rem;
+
+  background: var(--background);
+}
+
+.search-btn {
+  width: 5rem;
+  border: 0;
+  padding: 0;
+  margin-left: 1.3rem;
+  background: var(--background);
+  display: flex;
+  align-items: center;
+}
+
+.search input {
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 2.1rem;
+  border: 0;
+  border-radius: 10px;
+  background: var(--background);
+  color: var(--text-description);
+
+  width: 17.8rem;} */
+
+.search{
+    border: 2px solid blue; 
+    display: flex;
+    width: 22rem;
+    height: 4.5rem;
+    /* gap: .1rem; */
+    border: 0;
+    border-radius: 10px;
+    background-color: var(--background);
+}
+.search-btn{
+  border: 0;
+
+  width: 5rem;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  background-color: var(--background);
+}
+
+.search input{
+  width: 17.8rem;
+  background-color: var(--background);
+  border: 0;
+  border-radius: 10px;
+} 
+
+#bag {
+  width: 34px;
+  height: 34px;
+}
+
+#navbar {
+  box-sizing: border-box;
+  margin: 39px auto;
+  display: flex;
+  width: 80vw;
+  height: 48px;
+  align-items: center;
+  justify-content: space-between;
+  /* border: 2px solid red; */
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+}
+#title-price {
+  position: absolute;
+  width: 357px;
+  height: 533px;
+  left: 300px;
+  top: 190px;
+
+  color: var(--text);
+}
+
+#title-price h1 {
+  /* Fonte e tamanhos */
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 70px;
+}
+#title-price h3 {
+  /* Fonte e tamanhos */
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--text-description);
+  margin-top: 21px;
+}
+#title-price h2 {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 47px;
+  color: var(--text);
+  margin-top: 21px;
+}
+#title-price button {
+  margin-top: 30px;
+  width: 274px;
+  height: 90px;
+  background: var(--button);
+  /* padding: 3.3rem 7.7rem; */
+    border-radius: 10px;
+    border: 0;
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 2.8rem;
+
+  color: #ffffff;
+
+  text-transform: uppercase;
+}
+
+#title-price button:hover {
+  background: var(--button-hover);
+
+  transition: background 1s ease;
+}
+/* Conteúdo principal da página, meio */
+#main {
+  background: var(--main-background);
+  height: 914px;
+  margin-left: 80rem;
+  width: 68em;
+  z-index: -1;
+  position: absolute;
+}
+#ampliado {
+  margin-top: 100px;
+  margin: 100px auto 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+#fotos-menores {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: auto;
+}
+#fotos-menores {
+  border-top: 1px solid red;
+}
+#fotos-menores:hover {
+  border-top: 200px solid red;
+  transition: background 1s ease;
+}
+
+/* Footer da página(vídeo, redes sociais e explore mais */
+
+footer {
+  justify-content: space-between;
+  display: flex;
+  width: 100%;
+  height: 150px;
+  margin: 0 auto;
+  background: var(--background);
+}
+
+footer p {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+#exploremais {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 437px;
+  height: 166px;
+  background: #000000;
+  color: white;
+}
+#text-arrow {
+  display: flex;
+  margin: auto;
+}
+#exploremais p {
+  /* border: 2px solid red; */
+  margin: auto;
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+}
+#exploremais img {
+  /* border: 2px solid blue; */
+  margin: auto;
+  width: 24px;
+  height: 24px;
+}
