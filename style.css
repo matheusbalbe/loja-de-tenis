@@ -1,3 +1,4 @@
+/* Criando variáveis para as cores que serão usadas durante o projeto */
 :root {
   --button: #ff0000;
   --button-hover: #b30000;
@@ -10,7 +11,7 @@
 
   font-size: 62.5%;
 }
-
+/* Resetando algumas configurações do navegador */
 * {
   margin: 0;
   padding: 0;
@@ -20,65 +21,52 @@
 body {
   font-family: "Roboto", sans-serif;
   font-size: 1.6rem;
-
   background: var(--background);
 }
+/* Retirando estilos de listas e definindo o cursor dos botões */
+li {
+  list-style: none;
+}
 
+a {
+  text-decoration: none;
+}
+
+button,
+input {
+  border: none;
+
+  background: none;
+}
+
+button,
+img {
+  cursor: pointer;
+}
+/* Configurando o container */
 #container {
   display: flex;
-  /* border: 2px solid blue; */
   width: 100%;
   height: 90vh;
   margin: auto;
 }
+
 /* Barra de navegação: topicos, pesquisa e sacola */
+
 #navbar img {
   width: 52px;
   height: 36.4px;
 }
-/* .search {
-  border-radius: 10px;
+.search {
+  display: flex;
   width: 22rem;
   height: 4.5rem;
-
-  display: flex;
-  gap: .5rem;
-
-  background: var(--background);
-}
-
-.search-btn {
-  width: 5rem;
-  border: 0;
-  padding: 0;
-  margin-left: 1.3rem;
-  background: var(--background);
-  display: flex;
-  align-items: center;
-}
-
-.search input {
-  font-weight: 500;
-  font-size: 1.8rem;
-  line-height: 2.1rem;
+  /* gap: .1rem; */
   border: 0;
   border-radius: 10px;
-  background: var(--background);
-  color: var(--text-description);
-
-  width: 17.8rem;} */
-
-.search{
-    border: 2px solid blue; 
-    display: flex;
-    width: 22rem;
-    height: 4.5rem;
-    /* gap: .1rem; */
-    border: 0;
-    border-radius: 10px;
-    background-color: var(--background);
+  background-color: var(--background);
 }
-.search-btn{
+.search-btn {
   border: 0;
 
   width: 5rem;
@@ -88,16 +76,11 @@ body {
   background-color: var(--background);
 }
 
-.search input{
+.search input {
   width: 17.8rem;
   background-color: var(--background);
   border: 0;
   border-radius: 10px;
-} 
-
-#bag {
-  width: 34px;
-  height: 34px;
 }
 
 #navbar {
@@ -108,12 +91,26 @@ body {
   height: 48px;
   align-items: center;
   justify-content: space-between;
-  /* border: 2px solid red; */
   font-family: "Roboto";
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
+  list-style: none;
 }
+#navbar a {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: var(--text);
+  text-decoration: none;
+}
+
+#bag {
+  width: 34px;
+  height: 34px;
+}
+
 #title-price {
   position: absolute;
   width: 357px;
@@ -148,28 +145,44 @@ body {
   color: var(--text);
   margin-top: 21px;
 }
-#title-price button {
+/* Botão de comprar */
+#purchase {
   margin-top: 30px;
   width: 274px;
   height: 90px;
   background: var(--button);
-  /* padding: 3.3rem 7.7rem; */
-    border-radius: 10px;
-    border: 0;
+  border-radius: 10px;
+  border: 0;
   font-weight: 700;
   font-size: 2.4rem;
   line-height: 2.8rem;
-
   color: #ffffff;
-
   text-transform: uppercase;
 }
 
-#title-price button:hover {
+#purchase:hover {
   background: var(--button-hover);
-
   transition: background 1s ease;
 }
+#numeracao ul {
+  display: flex;
+  margin: 0 auto;
+}
+#numeracao button {
+  background: var(--footer-hover);
+  margin: 20px 10px 10px;
+  padding: 5px;
+  color: white;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2rem;
+}
+
+#numeracao h3 {
+  color: var(--text);
+}
+
 /* Conteúdo principal da página, meio */
 #main {
   background: var(--main-background);
@@ -192,15 +205,13 @@ body {
   gap: 10px;
   margin: auto;
 }
-#fotos-menores {
-  border-top: 1px solid red;
+/* #fotos-menores {
 }
 #fotos-menores:hover {
-  border-top: 200px solid red;
   transition: background 1s ease;
-}
+} */
 
-/* Footer da página(vídeo, redes sociais e explore mais */
+/* Footer da página(vídeo, redes sociais e explore mais) */
 
 footer {
   justify-content: space-between;
@@ -211,13 +222,20 @@ footer {
   background: var(--background);
 }
 
-footer p {
+footer li {
   display: flex;
   text-align: center;
   align-items: center;
+}
+
+footer li a {
   font-weight: 700;
   font-size: 18px;
   line-height: 21px;
+  text-decoration: none;
+  list-style: none;
+  text-transform: uppercase;
+  color: var(--text);
 }
 
 #exploremais {
@@ -226,15 +244,18 @@ footer p {
   gap: 1rem;
   width: 437px;
   height: 166px;
-  background: #000000;
+  background: var(--footer);
   color: white;
+}
+#exploremais:hover {
+  background: var(--footer-hover);
+  transition: background 1s ease;
 }
 #text-arrow {
   display: flex;
   margin: auto;
 }
 #exploremais p {
-  /* border: 2px solid red; */
   margin: auto;
   font-family: "Roboto";
   font-weight: 700;
@@ -242,7 +263,6 @@ footer p {
   line-height: 28px;
 }
 #exploremais img {
-  /* border: 2px solid blue; */
   margin: auto;
   width: 24px;
   height: 24px;
