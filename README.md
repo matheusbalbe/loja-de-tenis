@@ -21,4 +21,5 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 ---
 
 Feito por [Matheus Balbe](https://www.linkedin.com/in/matheusbalbe)
+<br>
 Projeto baseado no desafio da [RocketSeat](https://rocketseat.com.br)
